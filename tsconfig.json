@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        // "target": "ES5",
+        "module": "commonjs",
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "sourceRoot": "app",
+        "outDir": "app/bld",
+        "baseUrl":".",
+        "paths":{
+             "vendor/*":["app/vendor/*"]
+        }
+    },
+    "exclude": [
+        "bld",
+        "node_modules"
+    ]
+}
