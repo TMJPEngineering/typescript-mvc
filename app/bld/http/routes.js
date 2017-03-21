@@ -11,7 +11,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var routes_1 = require("../vendor/routes");
-var CTRL = require("./controllers");
+var C = require("./controllers");
 var Routes = (function (_super) {
     __extends(Routes, _super);
     function Routes(app) {
@@ -24,9 +24,9 @@ var Routes = (function (_super) {
         Initialize routes
     */
     Routes.prototype.init = function () {
-        var app = this.app;
-        app.get('/', new CTRL.UserController().index);
-        app.get('/home', new CTRL.HomeController().index);
+        var router = this.router();
+        router.get('/', C.UserController, 'index');
+        router.get('/home', C.HomeController, 'index');
     };
     return Routes;
 }(routes_1.BaseRoute));

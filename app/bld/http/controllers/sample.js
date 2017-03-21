@@ -5,10 +5,9 @@ var C;
     var sample = (function () {
         function sample() {
         }
-        sample.prototype.index = function (req, res) {
-        };
+        ;
         return sample;
     }());
     C.sample = sample;
-})(C || (C = {}));
+})(C = exports.C || (exports.C = {}));
 //# sourceMappingURL=sample.js.map

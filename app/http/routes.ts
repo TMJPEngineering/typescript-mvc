@@ -1,5 +1,6 @@
 import {BaseRoute} from "../vendor/routes";
-import * as CTRL from './controllers';
+import * as C from './controllers';
+
 export class Routes extends BaseRoute{
 	
 	constructor(public app:any){
@@ -10,12 +11,14 @@ export class Routes extends BaseRoute{
 	/*
 		Initialize routes
 	*/
+	
 	init(){
-				
-		let app = this.app;
-
-		app.get('/',new CTRL.UserController().index);
-		app.get('/home',new CTRL.HomeController().index);				
+						
+		let router = this.router();
+		
+		router.get('/',C.UserController,'index');
+		router.get('/home',C.HomeController,'index');
+			
 	}
 
 }

@@ -1,27 +1,24 @@
-import { Router ,Request ,Response ,NextFunction } from 'express';
 
-import {Controller} from '../controller';
 export class BaseRoute{
 		
 		constructor(public app:any){
-					
+			
+				console.log('route constructor');	
 		};
 
 		router(){
 			return this;
 		}
 
-		get(url:string,name?:any){
-			this.app.get(url,function(req:Request,res:Response){
-				res.send('hello');
-			});
-			
+		get(url:string,controller:any,method:any){	
+			let CRTL = new controller();
+			this.app.get(url,CRTL[method].bind(CRTL));						
 		}
 
-		controller(){
-			return new Controller();
+		post(url:string,controller:any,method:string){
+			let CRTL = new controller();
+			this.app.get(url,CRTL[method].bind(CRTL));			
 		}
-		
 
 }	
 
