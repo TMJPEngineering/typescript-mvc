@@ -17,6 +17,6 @@
     "exclude": [
         "bld",      
         "node_modules",
-        "./app/bld/resources/assets/src/**/*"
+        "app/bld/resources/assets/src/**/*"
     ]
 }

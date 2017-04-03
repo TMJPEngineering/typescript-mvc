@@ -5,7 +5,8 @@ var HomeController = (function () {
     function HomeController() {
     }
     HomeController.prototype.index = function (req, res) {
-        res.sendFile(path.join(__dirname, '../../resources/views', 'home.html'));
+        //res.send('home');
+        res.sendFile(path.join(__dirname, '../../resources/views', 'index.html'));
     };
     return HomeController;
 }());

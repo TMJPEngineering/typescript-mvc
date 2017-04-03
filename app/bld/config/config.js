@@ -11,6 +11,7 @@ var Config = (function () {
         console.log(path.join(__dirname, '../resources/assets'));
         this.app.use("/node_modules", express.static(path.join(__dirname, '../../../node_modules')));
         this.app.use("/assets", express.static(path.join(__dirname, '../resources/assets')));
+        this.app.use("/dist", express.static(path.join(__dirname, '../resources/assets/dist')));
     };
     return Config;
 }());

@@ -1,6 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var Model = require("../models");
+var path = require("path");
 var UserController = (function () {
     function UserController() {
         this.model = new Model.UserModel();
@@ -8,7 +9,7 @@ var UserController = (function () {
     UserController.prototype.index = function (req, res) {
         this.model.getUser().then(function (user) {
             console.log(user);
-            res.send(user);
+            res.sendFile(path.join(__dirname, '../../resources/views', 'login.html'));
         });
     };
     return UserController;

@@ -1,9 +1,23 @@
+var webpack = require("webpack");
 module.exports = {
-    entry: "./app/bld/resources/assets/src/index.tsx",
-    output: {
-        filename: "bundle.js",
+    entry: {
+
+        home:"./app/bld/resources/assets/src/components/home/index.tsx",
+        about:"./app/bld/resources/assets/src/components/about/index.tsx",
+        login:"./app/bld/resources/assets/src/components/login/index.tsx",
+
+    },
+    output: {      
+        filename: "[name].bundle.js",
+        chunkFilename: "[id].chunk.js",
         path: __dirname + "/app/bld/resources/assets/dist"
     },
+    plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            filename: "commons.js",
+            name: "commons"
+        })
+    ],
 
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",

@@ -5,4 +5,5 @@ function __export(m) {
 exports.__esModule = true;
 __export(require("./UserController"));
 __export(require("./HomeController"));
+__export(require("./AboutController"));
 //# sourceMappingURL=index.js.map
