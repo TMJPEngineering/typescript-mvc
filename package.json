@@ -12,8 +12,18 @@
     "consolidate": "^0.14.5",
     "express": "^4.15.2",
     "handlebars": "^4.0.6",
-    "vio": "^0.2.1"
+    "mongoose": "^4.9.2",
+    "vio": "^0.2.1",
+    "@types/react": "^15.0.20",
+    "@types/react-dom": "^0.14.23",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "ts-loader": "^2.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.2.2"
+  },
   "keywords": []
 }
