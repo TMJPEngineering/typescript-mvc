@@ -16,5 +16,9 @@ export class UserController{
 		
 	}
 
+	login(req:Request,res:Response){
+		console.log('login');
+	}
+
 }
 

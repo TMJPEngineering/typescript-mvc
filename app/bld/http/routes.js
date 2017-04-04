@@ -28,6 +28,7 @@ var Routes = (function (_super) {
         router.get('/', C.UserController, 'index');
         router.get('/home', C.HomeController, 'index');
         router.get('/about', C.AboutController, 'index');
+        router.post('/login', C.UserController, 'login');
     };
     return Routes;
 }(routes_1.BaseRoute));

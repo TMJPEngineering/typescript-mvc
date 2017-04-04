@@ -12,6 +12,9 @@ var UserController = (function () {
             res.sendFile(path.join(__dirname, '../../resources/views', 'login.html'));
         });
     };
+    UserController.prototype.login = function (req, res) {
+        console.log('login');
+    };
     return UserController;
 }());
 exports.UserController = UserController;

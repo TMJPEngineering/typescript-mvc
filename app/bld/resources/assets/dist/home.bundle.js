@@ -1,17 +1,18 @@
-webpackJsonp([0],[
+webpackJsonp([1],[
 /* 0 */
 /***/ (function(module, exports) {
 
 module.exports = React;
 
 /***/ }),
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports) {
 
 module.exports = ReactDOM;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42,7 +43,7 @@ exports.Footer = Footer;
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82,8 +83,15 @@ exports.Header = Header;
 
 
 /***/ }),
-/* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */,
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -100,8 +108,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var React = __webpack_require__(0);
-var header_1 = __webpack_require__(3);
-var footer_1 = __webpack_require__(2);
+var header_1 = __webpack_require__(4);
+var footer_1 = __webpack_require__(3);
 var Home = (function (_super) {
     __extends(Home, _super);
     function Home() {
@@ -119,20 +127,20 @@ exports.Home = Home;
 
 
 /***/ }),
-/* 6 */,
-/* 7 */,
-/* 8 */
+/* 14 */,
+/* 15 */,
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 exports.__esModule = true;
 var React = __webpack_require__(0);
-var ReactDom = __webpack_require__(1);
-var home_1 = __webpack_require__(5);
+var ReactDom = __webpack_require__(2);
+var home_1 = __webpack_require__(13);
 ReactDom.render(React.createElement(home_1.Home, null), document.getElementById('app'));
 
 
 /***/ })
-],[8]);
+],[16]);
 //# sourceMappingURL=home.bundle.js.map

@@ -1,4 +1,7 @@
 import * as React from 'react';
+import axios,{ AxiosRequestConfig, AxiosPromise } from 'axios';
+
+
 interface ILoginState{
 	username:string;
 	password:string;
@@ -19,7 +22,18 @@ export class Login extends React.Component<{},ILoginState>{
 		/*
 			Use any http request library
 		*/
-		window.location.assign('/home');
+		axios({
+			method:'post',
+			url:'/login',
+			data:{
+				username:this.state.username,
+				password:this.state.password
+			}
+		}).then(function(response){
+			console.log(response);
+		});
+
+		// window.location.assign('/home');
 		e.preventDefault();
 	}
 

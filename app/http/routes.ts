@@ -19,6 +19,7 @@ export class Routes extends BaseRoute{
 		router.get('/',C.UserController,'index');
 		router.get('/home',C.HomeController,'index');
 		router.get('/about',C.AboutController,'index');
+		router.post('/login',C.UserController,'login');
 			
 	}
 
